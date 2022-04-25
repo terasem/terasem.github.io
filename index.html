@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>TERASEM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-white", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-white";
+}
+</script>
+<style>
+body {font-family: 'Roboto', sans-serif;}
+body {font-size:16px;}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+    a { text-decoration: none; }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<body class="w3-black w3-content" style="max-width:600px">
+
+
+  <div class="w3-panel w3-card-4">
+  <br>
+  
+  <h2 class="w3-center"><b>Važna Věda</b></h2>
+  <p class="w3-center">Dlja obnovjenije ljustva.</p><hr>
+    <div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-white" onclick="openCity(event,'1')">vvod</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'2')">očiščenje tela</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'3')">očiščenje raza</button>
+  </div>
+  
+  <div id="1" class="w3-container w3-border city">
+    <h2>Vvod</h2>
+    <p>To proces..o</p>
+  </div>
+
+  <div id="2" class="w3-container w3-border city" style="display:none">
+    <h2>Očiščenje Tela</h2>
+    <p>To proces..</p>
+	There is a fog,veil on the inner eye.
+	
+  </div>
+
+  <div id="3" class="w3-container w3-border city" style="display:none">
+    <h2>Očiščenje Raza</h2>
+    <p>To proces..</p>
+  </div>
+</div>
+
+
+
+</body>
+</html>
