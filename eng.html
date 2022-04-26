@@ -21,6 +21,9 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " w3-white";
 }
+function eng(){
+	window.open("https://terasem.github.io/eng.html","_self");
+}
 </script>
 <style>
 body {font-family: 'Roboto', sans-serif;}
@@ -86,13 +89,13 @@ body {
     <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'2')">2</button>
 	<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'3')">3</button>
 	<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'4')">4</button>
-	<button class="w3-bar-item  w3-white w3-button tablink"><a href="eng.html">English<a></button>
-
+	<button onclick="eng()" class="w3-bar-item  w3-white w3-button tablink">Medžuslovjansky</button>
   </div>
   
   <div id="pref" class="w3-container w3-border city">
-    <h3>Vvod</h3>
-	<p>Cělj  toj sajta jest byti skarbniceju praktičnoj informacije o razvoju psihičnyh sposobnostij.</p>
+	<h3>Preface</h3>
+
+	<p>The purpose of this webpage is to be an online repository of practical information regarding the development of psychic abilities.</p>
 	
   </div>
 
