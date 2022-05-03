@@ -8,21 +8,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<script>
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-white", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-white";
-}
-</script>
+
+  <script>
+        var videos = ["Ascension.mp4",];
+        window.onload = function () {
+            var playerDiv = document.getElementById("random_player");
+            var player = document.createElement("IFRAME");
+            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
+            player.setAttribute('width', '640');
+            player.setAttribute('height', '390');
+            player.setAttribute('src', randomVideoUrl);
+
+            playerDiv.appendChild(player);
+        };
+    </script>
 <style>
 body {font-family: 'Roboto', sans-serif;}
 body {font-size:16px;}
@@ -110,33 +109,13 @@ a:hover {
   <br>
   
      <div class="w3-bar w3-black">
-    <br>
+    
   </div>
   
 <div id="1" class="w3-container w3-border city">
-		    <br><img src="error.jpg" class="w3-center" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;">
-
-
+        <div id="random_player" />
 
 </div>
-<div id="2" class="w3-container w3-border city" style="display:none">
-<br><img src="error.jpg" class="w3-center" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;">
-
-  </div>
-  
-<div id="3" class="w3-container w3-border city" style="display:none">
-<br><img src="error.jpg" class="w3-center" style="display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;">
-
-  </div>
 
 </body>
 </html>
