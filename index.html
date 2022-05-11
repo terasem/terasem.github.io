@@ -14,6 +14,7 @@ function show(shown, hidden) {
   document.getElementById(hidden).style.display='none';
   return false;
 }
+
 </script>
 <style>
 body {font-family: 'Roboto', sans-serif;}
@@ -195,9 +196,21 @@ is a Cavern filled with Stars.</a></div>
 
 <div class="w3-row">
   <div class="w3-col s6"><img style="width:60%" src="Tuco Amalfi, Ascension (1987).jpg" class="w3-circle center w3-image"></div>
-  <div class="w3-col s6"><p class="w3-large">Ⰰⰲⰰⱆ ⱀⰰ ⱃⰵⱀⰽⰰⱅⱁ ⱀⰰ ⰽⰲⰰ. Ⰻⰼⰰⰲⱆⰸⱆⰰ ⱀⰰ ⱄⰵⱀⰹⱁ. Ⰿⰰⰿ ⰼⰵⱅⰰⱀ ⱅⱆⱀⱆⱀⱆⱀⱁ ⱍⱆ ⰻⰿⱁⱀⰸⱁⱀ ⰹⱆⰾⰰ ⰴⰵ ⰹⱆⰾⰰ ⱀⰰ ⰱⱁ.</p><!--Awau na renkato na kwa. Ijavuzua na senyo. Mam jetan tununo chu imonzon yula de yula na bo.--><p class="w3-text-grey w3-small">This is the first trial. The subjugation of the body. The moon represents the passage from the waking to the astral world.</p></div>
-</div>
+  <div class="w3-col s6"><p class="w3-large">Ⰰⰲⰰⱆ ⱀⰰ ⱃⰵⱀⰽⰰⱅⱁ ⱀⰰ ⰽⰲⰰ. Ⰻⰼⰰⰲⱆⰸⱆⰰ ⱀⰰ ⱄⰵⱀⰹⱁ. Ⰿⰰⰿ ⰼⰵⱅⰰⱀ ⱅⱆⱀⱆⱀⱆⱀⱁ ⱍⱆ ⰻⰿⱁⱀⰸⱁⱀ ⰹⱆⰾⰰ ⰴⰵ ⰹⱆⰾⰰ ⱀⰰ ⰱⱁ.</p><!--Awau na renkato na kwa. Ijavuzua na senyo. Mam jetan tununo chu imonzon yula de yula na bo.-->
+<p class="w3-text-grey w3-small">This is the first trial. The subjugation of the body. The moon represents the passage from the waking to the astral world.</p>
+    </div>
 
+</div>
+<script>
+function hide() {
+  var x = document.getElementById("hide");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
   </div>
   
 </div>
