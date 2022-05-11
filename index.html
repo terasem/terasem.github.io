@@ -8,20 +8,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-  <script>
-        var videos = ["Midnight Gospel _ The Existential Trap of the Soul Prison (Death Scenes from Annihilation of Joy).mp4",];
-        window.onload = function () {
-            var playerDiv = document.getElementById("random_player");
-            var player = document.createElement("IFRAME");
-            var randomVideoUrl = videos[Math.floor(Math.random() * videos.length)];
-            player.setAttribute('width', '640');
-            player.setAttribute('height', '390');
-            player.setAttribute('src', randomVideoUrl);
-
-            playerDiv.appendChild(player);
-        };
-    </script>
+<script>
+function show(shown, hidden) {
+  document.getElementById(shown).style.display='block';
+  document.getElementById(hidden).style.display='none';
+  return false;
+}
+</script>
 <style>
 body {font-family: 'Roboto', sans-serif;}
 body {font-size:16px;}
@@ -98,24 +91,121 @@ body {
   }
 }
 a:hover {
-	color: #00008B;
+	color: purple;
 	font-weight: bold;
+}
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
 }
 </style>
 <body class="w3-black w3-content" style="max-width:700px">
-
-
+<div 
+ style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;" 
+ unselectable="on"
+ onselectstart="return false;" 
+ onmousedown="return false;">
+  <div id="0">
+  
+  
   <div class="w3-panel w3-card-4">
-  <br>
+
+<div class="w3-display-container">
+
+<div class="w3-bar w3-border w3-black">
+  <a class="w3-bar-item w3-button">0</a>
+</div>
+  <img style="visibility: hidden;" class="center" src="img_lights.jpg" alt="Lights">
+
+  <div class="glow w3-display-middle w3-large"><a href="#" onclick="return show('1','0');">
+  Within the Depths of the Earth
+is a Cavern filled with Stars.</a></div>
   
-     <div class="w3-bar w3-black">
-    
   </div>
+</div>
+</div>
+
+<div id="1" style="display:none">
+
+
+      <div class="w3-panel w3-card-4">
+ <div class="w3-bar w3-border w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white" onclick="return show('0','1');">0</a>
+  <a class="w3-bar-item w3-button">1</a>
+</div>
+<div class="w3-display-container">
+
+<br>
+<br>
+<div class="w3-row">
+  <div class="w3-col s4 w3-center">&nbsp;</div>
+  <div class="w3-col s4 w3-center"><div style="background-color: purple;" class="circle center"><p class="w3-xlarge w3-text-grey">Ⰰⱆⱃⱁⱃⰰ</p></div></div>
+  <div class="w3-col s4 w3-center">&nbsp;</div>
+</div>
+<div class="w3-row">
+  <div class="w3-col m3 w3-center"><div style="background-color: red;" class="circle center"><p class="w3-xlarge w3-text-grey">Ⱑⰿⰰⰴⱆ</p></div></div>
+  <div class="w3-col m6 w3-center">&nbsp;</div>
+  <div class="w3-col m3 w3-center"><div style="background-color: blue;" class="circle center"><p class="w3-xlarge w3-text-grey">Ⱑⱀⱓⱀ</p></div>
+</div>
+<div class="w3-row">
+  <div class="w3-col s4 w3-center">&nbsp;</div>
+  <div class="w3-col s4 w3-center"><div style="background-color: yellow;" class="circle center"><p class="w3-xlarge w3-text-grey">Ⱀⰻⱀ</p></div></div>
+  <div class="w3-col s4 w3-center">&nbsp;</div>
+</div>
+<div class="w3-row">
+  <div class="w3-col m3 w3-center"><div style="background-color: orange;" class="circle center"><p class="w3-xlarge w3-text-grey">Ⰱⱆⱀⱍⰰⰾⰰ</p></div></div>
+  <div class="w3-col m6 w3-center">&nbsp;</div>
+  <div class="w3-col m3 w3-center"><div style="background-color: green;" class="circle center"><p class="w3-xlarge w3-text-grey">Ⱎⰻⱀⰰⰽⱆ</p></div></div>
+</div>
+<div class="w3-row">
+  <div class="w3-col s4 w3-center">&nbsp;</div>
+  <div class="w3-col s4 w3-center"><div style="background-color: grey;" class="glow circle center"><a onclick="return show('2','1');" class="w3-xlarge">Ⰿⰰⰿ</a></div></div>
+  <div class="w3-col s4 w3-center">&nbsp;</div>
+</div>
+  </div>
+<a href="#" onclick="return show('1','0');">
   
-<div id="1" class="w3-container w3-border city">
-        <div id="random_player" style="max-width:700px"/>
+</div>
 
 </div>
 
+  </div>
+  
+  <div id="2" style="display:none">
+	
+	   <div class="w3-panel w3-card-4">
+ <div class="w3-bar w3-border w3-black">
+  <a class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white" onclick="return show('0','2');">0</a>
+  <a class="w3-bar-item w3-button w3-hover-none w3-text-grey w3-hover-text-white" onclick="return show('1','2');">1</a>
+  <a class="w3-bar-item w3-button">2</a>
+</div>
+<div class="w3-display-container">
+
+<br>
+<br>
+<div class="w3-row">
+  <div class="w3-col s4 w3-center">&nbsp;</div>
+  <div class="w3-col s4 w3-center"><div style="background-color: grey;" class="glow circle center"><p" class="w3-xlarge">Ⰿⰰⰿ</p></div></div>
+  <div class="w3-col s4 w3-center">&nbsp;</div>
+</div>
+
+<h1 class="w3-center">Ⱃⰵⱀⰽⰰⱅⱁ ⱀⰰ Ⰽⰲⰰ</h1>
+
+  </div>
+  
+</div>
+
+</div>
+
+	
+	
+	
+	
+	</div>
+  
+  
+</div>
 </body>
 </html>
