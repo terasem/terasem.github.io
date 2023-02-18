@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+        <style>
       body {
         background-color: #333;
         color: #fff;
@@ -12,12 +12,12 @@
       .terminal {
         width: 80%;
         max-width: 600px;
-        height: 400px;
         margin: 50px auto;
         padding: 20px;
         background-color: #111;
         border-radius: 10px;
         box-shadow: 0 0 10px #000;
+        overflow: auto;
       }
       .header {
         background-color: #222;
@@ -38,6 +38,18 @@
       .prompt {
         color: #0f0;
       }
+      .links {
+        display: flex;
+        justify-content: space-between;
+        background-color: #e0e0e0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
+      }
+      .links div {
+        width: 30%;
+        text-align: center;
+      }
       @media only screen and (max-width: 600px) {
         .terminal {
           width: 100%;
@@ -50,8 +62,33 @@
     <div class="terminal">
       <div class="header">
         <h3>TERASEM</h3>
+        <nav>
+          <a href="#">Home</a> |
+          <a href="#">Index</a>
+        </nav>
       </div>
-      <p class="prompt">Comming soon...</p>
+	   <p>...</p>
+      <p class="prompt">...</p>
+      <p>...</p>
+
+      <div class="links">
+        <div>
+          <a href="#">Link 1</a><br>
+          <a href="#">Link 2</a><br>
+          <a href="#">Link 3</a>
+        </div>
+        <div>
+          <a href="#">Link 4</a><br>
+          <a href="#">Link 5</a><br>
+          <a href="#">Link 6</a>
+        </div>
+        <div>
+          <a href="#">Link 7</a><br>
+          <a href="#">Link 8</a><br>
+          <a href="#">Link 9</a>
+        </div>
+      </div>
+	  
     </div>
   </body>
 </html>
