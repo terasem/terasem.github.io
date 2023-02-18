@@ -150,32 +150,48 @@
       <div class="header">
         <h3>GESAR - "New Frontiers"</h3>
         <nav>
-          <a href="index.html">Index</a>
+		<a href="gesar.html">GESAR</a>
+          | <a href="index.html">Index</a>
 
         </nav>
       </div>
 	  <br>
-<div class="links">
-        <div>
-          <a href="purpose0.html">Purpose 0</a>
-        </div>
-        <div>
-			<a href="mastery0.html">Mastery 0</a>
-        </div>
-        <div>
-    
-        </div>
-      </div>
-	  
-	  
-	 	  
-	
+
+	  <p class="prompt">PURPOSE 0</p>
+      <p>TERASEM ― means <i>Through the Mind.</i></p>
+<ul>
+     <li>TERA - Motion</li>
+	 <li>SEM - Substance</li>
+	 <li>Universe = <i>Through Substance in Motion</i></li>
+</ul>	 
+	 	
 	</div>
 
 	  
 
 	  
     </div>
-	
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
   </body>
 </html>
