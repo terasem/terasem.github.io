@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-                <style>
+        <style>
       body {
         background-color: #333;
         color: #fff;
@@ -150,25 +150,53 @@
   <body>
     <div class="terminal">
       <div class="header">
-        <h3>TERASEM</h3>
-  
-      </div>
-      <br>
-	  <p class="prompt centre">INDEX</p>
+        <h3>GESAR - "New Frontiers"</h3>
+        <nav>
+		<a href="gesar.html">GESAR</a>
+          | <a href="index.html">Index</a>
 
-
-      <div class="links">
-        <div>
-          <a href="gesar.html">GESAR</a>
-        </div>
-        <div>
-       
-        </div>
-        <div>
-    
-        </div>
+        </nav>
       </div>
+	  <br>
+
+	  
+	 	  <p class="prompt centre">KNOWLEDGE 0</p>
+		  <p class="centre">CONCENTRATION</p>
+	
+	<p>Transformation through CONCENTRATION.
+	
+	
+	
+	
+	
+	
+	</div>
+
+	  
+
 	  
     </div>
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
   </body>
 </html>
