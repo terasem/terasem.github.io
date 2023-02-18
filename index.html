@@ -2,63 +2,49 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <style>
-  body {
-    background-color: #333;
-    color: #fff;
-    font-family: monospace;
-    font-size: 14px;
-  }
-  .terminal {
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #111;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000;
-    box-sizing: border-box;
-    overflow-y: scroll;
-  }
-  .header {
-    background-color: #222;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-  }
-  .header a {
-    color: #0f0;
-    text-decoration: none;
-  }
-  .prompt {
-    color: #0f0;
-  }
-  .links {
-    display: flex;
-    justify-content: space-between;
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #000;
-  }
-  .links div {
-    width: 30%;
-    text-align: center;
-  }
-  @media only screen and (min-width: 600px) {
-    .terminal {
-      width: 80%;
-    }
-  }
-</style>
-
+    <style>
+      body {
+        background-color: #333;
+        color: #fff;
+        font-family: monospace;
+        font-size: 14px;
+      }
+      .terminal {
+        width: 80%;
+        max-width: 600px;
+        height: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #111;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
+      }
+      .header {
+        background-color: #222;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+      }
+      .header a {
+        color: #0f0;
+        text-decoration: none;
+      }
+      .prompt {
+        color: #0f0;
+      }
+      @media only screen and (max-width: 600px) {
+        .terminal {
+          width: 100%;
+          margin: 50px auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="terminal">
