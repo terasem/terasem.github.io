@@ -61,6 +61,19 @@
         width: 30%;
         text-align: center;
       }
+	  .square {
+        justify-content: space-between;
+        background-color: #e0e0e0;
+		color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
+      }
+      .square div {
+        width: 30%;
+        text-align: center;
+      }
+	  
 	  img {
   max-width: 100%;
   height: auto;
@@ -142,6 +155,8 @@
   cursor: pointer;
 }
 
+.centre {text-align: center;}
+
 	  }
     </style>
   </head>
@@ -150,31 +165,47 @@
       <div class="header">
         <h3>GESAR - "New Frontiers"</h3>
         <nav>
-          <a href="index.html">Index</a>
+		<a href="gesar.html">GESAR</a>
+          | <a href="index.html">Index</a>
 
         </nav>
       </div>
 	  <br>
-<div class="links">
-        <div>
-          <a href="knowledge1.html">Knowledge 1</a>
-        </div>
-        <div>
 
-        </div>
-        <div>
-        </div>
-      </div>
 	  
-	  
-	 	  
+	 	  <p class="prompt centre">KNOWLEDGE 1</p>
+		  <p class="centre"></p>
+<div class="square">
 	
+
+	</div>
 	</div>
 
 	  
 
 	  
     </div>
-	
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
   </body>
 </html>
