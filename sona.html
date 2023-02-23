@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
- <style>
+        <style>
       body {
         background-color: #333;
         color: #fff;
@@ -61,6 +61,21 @@
         width: 30%;
         text-align: center;
       }
+	  .square {
+        justify-content: space-between;
+        background-color: #e0e0e0;
+		color: black;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #000;
+      }
+   
+	  table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+    margin-left: auto;
+  margin-right: auto;
+}
 	  img {
   max-width: 100%;
   height: auto;
@@ -144,30 +159,94 @@
 
 .centre {text-align: center;}
 
+	  
+	  .blue {
+	  color: blue;
+	    font-weight: bold;
+	  }
+	  
+	  	  .red {
+	  color: red;
+	    font-weight: bold;
+	  }
+	  	  	  .green {
+	  color: green;
+	    font-weight: bold;
+	  }
+	  
+	    	  	  .yellow {
+	  color: yellow;
+	    font-weight: bold;
+	  }
 	  }
     </style>
   </head>
   <body>
     <div class="terminal">
       <div class="header">
-        <h3>TERASEM</h3>
-  
+        <h3>RESEARCH</h3>
+        <nav>
+		
+		<a href="index.html">Index</a>
+
+        </nav>
       </div>
-      <br>
-	  <p class="prompt centre">INDEX</p>
+	  <br>
+
+	  
+	 	  <p class="prompt centre">SONA</p>
+	<p class="centre">LESSON 1</p>
+<div class="square">
+
+<p>The vocabulary is composed of one or two syllable words called <b>radicals</b>. Each <b>radical</b> represents an idea or a group of ideas.</p>
+
+<p class="centre"><span class="blue">mi</span> | I, me, my</p>
+<p class="centre"><span class="blue">tu</span> | you, your</p>
+
+<p>Sona is composed of 375 <b>radicals</b>, which are put together to make words and sentences.</p>
+<p class="centre"><b>Word Building</b></p>
+
+<p>Radicals are put together to form new words.</p>
+
+<p class="centre"><span class="blue">so</span> | with, accompany</p>
+<p class="centre"><span class="blue">ji</span> | person</p>
+<p class="centre"><span class="blue">soji</span> | friend (companion)</p>
 
 
-      <div class="links">
-       <div>
-          <!-- <a href="gesar.html">GESAR</a> -->
-<a href="research.html">RESEARCH</a>		  
-		  
-        </div>
-        <div>
-<a href="sona.html">SONA</a>
-        </div>
-      </div>
+	</div>
+<br>
+	
+
+	</div>
+	
+	
+	</div>
+
+	  
+
 	  
     </div>
+	<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
   </body>
 </html>
